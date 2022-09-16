@@ -4,2418 +4,1368 @@
     "order": 1,
     "name": "COUPLE",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977385790145100",
     "order": 2,
     "name": "CHIVALRY",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977398059532876",
     "order": 3,
     "name": "SOMETHING SPECIAL",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977408130056780",
     "order": 4,
     "name": "ALL FOR YOU",
     "type": "NORMAL",
-    "cards": [
-      "R10",
-      "R10",
-      "R10",
-      "R10"
-    ],
+    "cards": ["R10", "R10", "R10", "R10"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977419446288972",
     "order": 5,
     "name": "COM' BACK",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["S1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977515039720012",
     "order": 6,
     "name": "DREAM",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "-",
-      "S5"
-    ],
+    "cards": ["R1", "R1", "-", "S5"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977588321550924",
     "order": 7,
     "name": "DON'T LOOK BACK",
     "type": "NORMAL",
-    "cards": [
-      "S5",
-      "R1",
-      "S1",
-      "S5"
-    ],
+    "cards": ["S5", "R1", "S1", "S5"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977619463209548",
     "order": 8,
     "name": "SMILE",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "-",
-      "S5",
-      "-"
-    ],
+    "cards": ["S5", "-", "S5", "-"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977709256966732",
     "order": 9,
     "name": "FEELING",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "S1",
-      "S1",
-      "S5"
-    ],
+    "cards": ["S1", "S1", "S1", "S5"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977723511308876",
     "order": 10,
     "name": "ROUND & ROUND",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "S5",
-      "S1"
-    ],
+    "cards": ["R1", "S1", "S5", "S1"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "339977766392824396",
     "order": 1,
     "name": "I'M ON FIRE",
     "type": "NORMAL",
-    "cards": [
-      "R10",
-      "R10",
-      "R10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "EUN JIWON"
-    }
+    "artist": { "name": "EUN JIWON" }
   },
   {
     "_id": "339977803218813516",
     "order": 2,
     "name": "HOOLIGAN",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S3",
-      "S5"
-    ],
+    "cards": ["R1", "S3", "S5"],
     "length": 3,
-    "artist": {
-      "name": "EUN JIWON"
-    }
+    "artist": { "name": "EUN JIWON" }
   },
   {
     "_id": "339977838282146380",
     "order": 3,
     "name": "WORTHLESS",
     "type": "NORMAL",
-    "cards": [
-      "-",
-      "A1",
-      "A1"
-    ],
+    "cards": ["-", "A1", "A1"],
     "length": 3,
-    "artist": {
-      "name": "EUN JIWON"
-    }
+    "artist": { "name": "EUN JIWON" }
   },
   {
     "_id": "341067134365860425",
     "order": 13,
     "name": "FLOWER ROAD",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067167878349385",
     "order": 12,
     "name": "A Fool of Tears",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["R1", "S1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067181501448777",
     "order": 11,
     "name": "Sober",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "S5",
-      "-",
-      "S5"
-    ],
+    "cards": ["-", "S5", "-", "S5"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067454427955787",
     "order": 10,
     "name": "LOSER",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["S1", "R1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067459628892748",
     "order": 9,
     "name": "LAST DANCE",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067466172006987",
     "order": 8,
     "name": "La La La",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "S5",
-      "S1"
-    ],
+    "cards": ["R1", "S1", "S5", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067472016769611",
     "order": 7,
     "name": "BLUE",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067478590292556",
     "order": 6,
     "name": "FANTASTIC BABY",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "S5",
-      "-",
-      "S5"
-    ],
+    "cards": ["S5", "S5", "-", "S5"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067505786159691",
     "order": 5,
     "name": "FXXK IT",
     "type": "NORMAL",
-    "cards": [
-      "R3",
-      "R1",
-      "R1",
-      "S1"
-    ],
+    "cards": ["R3", "R1", "R1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067509813740107",
     "order": 4,
     "name": "BANG BANG BANG",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "S1",
-      "R1"
-    ],
+    "cards": ["S1", "R1", "S1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067514502971979",
     "order": 3,
     "name": "HARU HARU",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["S1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067531395531337",
     "order": 2,
     "name": "LAST FAREWELL",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067537417503305",
     "order": 1,
     "name": "LIES",
     "type": "NORMAL",
-    "cards": [
-      "R10",
-      "R10",
-      "R11",
-      "R11"
-    ],
+    "cards": ["R10", "R10", "R11", "R11"],
     "length": 4,
-    "artist": {
-      "name": "BIGBANG"
-    }
+    "artist": { "name": "BIGBANG" }
   },
   {
     "_id": "341067707578319436",
     "order": 4,
     "name": "RINGA LINGA",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["R1", "S1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "TAEYANG"
-    }
+    "artist": { "name": "TAEYANG" }
   },
   {
     "_id": "341067712684884556",
     "order": 3,
     "name": "ONLY LOOK AT ME",
     "type": "LIMITED",
-    "cards": [
-      "R10",
-      "R10",
-      "R10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "TAEYANG"
-    }
+    "artist": { "name": "TAEYANG" }
   },
   {
     "_id": "341067717400330827",
     "order": 2,
     "name": "EYES, NOSE, LIPS",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "TAEYANG"
-    }
+    "artist": { "name": "TAEYANG" }
   },
   {
     "_id": "341067722510041675",
     "order": 1,
     "name": "Wedding Dress",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "R1"
-    ],
+    "cards": ["R1", "S1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "TAEYANG"
-    }
+    "artist": { "name": "TAEYANG" }
   },
   {
     "_id": "341067996831154761",
     "order": 2,
     "name": "A Big Hit",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "R1"
-    ],
+    "cards": ["R1", "S1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "DAESUNG"
-    }
+    "artist": { "name": "DAESUNG" }
   },
   {
     "_id": "341068002948547145",
     "order": 1,
     "name": "Look at me, Gwisun",
     "type": "NORMAL",
-    "cards": [
-      "R7",
-      "R7",
-      "R8"
-    ],
+    "cards": ["R7", "R7", "R8"],
     "length": 3,
-    "artist": {
-      "name": "DAESUNG"
-    }
+    "artist": { "name": "DAESUNG" }
   },
   {
     "_id": "341068064425509452",
     "order": 6,
     "name": "1 year",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "G-DRAGON"
-    }
+    "artist": { "name": "G-DRAGON" }
   },
   {
     "_id": "341068068562141769",
     "order": 5,
     "name": "Missing You",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["S1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "G-DRAGON"
-    }
+    "artist": { "name": "G-DRAGON" }
   },
   {
     "_id": "341068075059118665",
     "order": 4,
     "name": "One Of A Kind",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "R1",
-      "R1"
-    ],
+    "cards": ["-", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "G-DRAGON"
-    }
+    "artist": { "name": "G-DRAGON" }
   },
   {
     "_id": "341068079946531403",
     "order": 3,
     "name": "Untitled",
     "type": "NORMAL",
-    "cards": [
-      "R50",
-      "R50",
-      "R50"
-    ],
+    "cards": ["R50", "R50", "R50"],
     "length": 3,
-    "artist": {
-      "name": "G-DRAGON"
-    }
+    "artist": { "name": "G-DRAGON" }
   },
   {
     "_id": "341068084915733068",
     "order": 2,
     "name": "Crayon",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "A1",
-      "R1"
-    ],
+    "cards": ["R1", "A1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "G-DRAGON"
-    }
+    "artist": { "name": "G-DRAGON" }
   },
   {
     "_id": "341068089730794057",
     "order": 1,
     "name": "Heartbraker",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "S1"
-    ],
+    "cards": ["S1", "R1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "G-DRAGON"
-    }
+    "artist": { "name": "G-DRAGON" }
   },
   {
     "_id": "341068157815882315",
     "order": 1,
     "name": "DOOM DADA",
     "type": "NORMAL",
-    "cards": [
-      "R10",
-      "R10",
-      "R10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "T.O.P"
-    }
+    "artist": { "name": "T.O.P" }
   },
   {
     "_id": "341068200616657483",
     "order": 2,
     "name": "High High",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "-",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "-", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "GD&TOP"
-    }
+    "artist": { "name": "GD&TOP" }
   },
   {
     "_id": "341068206678475339",
     "order": 1,
     "name": "Baby Good Night",
     "type": "NORMAL",
-    "cards": [
-      "R8",
-      "R7",
-      "R7",
-      "R8"
-    ],
+    "cards": ["R8", "R7", "R7", "R8"],
     "length": 3,
-    "artist": {
-      "name": "GD&TOP"
-    }
+    "artist": { "name": "GD&TOP" }
   },
   {
     "_id": "341068250540409420",
     "order": 2,
     "name": "i am a good boy",
     "type": "NORMAL",
-    "cards": [
-      "-",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["-", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "GD X TAEYANG"
-    }
+    "artist": { "name": "GD X TAEYANG" }
   },
   {
     "_id": "341068256548749899",
     "order": 1,
     "name": "GOOD BOY",
     "type": "NORMAL",
-    "cards": [
-      "R5",
-      "R5",
-      "R5",
-      "R5"
-    ],
+    "cards": ["R5", "R5", "R5", "R5"],
     "length": 4,
-    "artist": {
-      "name": "GD X TAEYANG"
-    }
+    "artist": { "name": "GD X TAEYANG" }
   },
   {
     "_id": "341068460923552331",
     "order": 12,
     "name": "you're the one I love",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068468599128651",
     "order": 11,
     "name": "Around",
     "type": "LIMITED",
-    "cards": [
-      "S1",
-      "R1",
-      "S5",
-      "S5"
-    ],
+    "cards": ["S1", "R1", "S5", "S5"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068497704452683",
     "order": 10,
     "name": "You just my happening",
     "type": "LIMITED",
-    "cards": [
-      "r1",
-      "R1",
-      "R1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068511900074572",
     "order": 9,
     "name": "NAKKA",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "S1",
-      "S5",
-      "r1"
-    ],
+    "cards": ["S1", "S1", "S5", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068515987423817",
     "order": 8,
     "name": "HOW PEOPLE MOVE",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068520650441292",
     "order": 7,
     "name": "LAST GOODBYE",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "S1",
-      "S5",
-      "S1"
-    ],
+    "cards": ["R1", "S1", "S5", "S1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068525644808779",
     "order": 6,
     "name": "Give Love",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "s1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["S1", "S1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068531467551307",
     "order": 5,
     "name": "HAPPENING",
     "type": "NORMAL",
-    "cards": [
-      "r10",
-      "r10",
-      "r10",
-      "r10"
-    ],
+    "cards": ["R10", "R10", "R10", "R10"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068537014518345",
     "order": 4,
     "name": "SAILING",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "s1",
-      "s1",
-      "r1"
-    ],
+    "cards": ["R1", "S1", "S1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068542952604235",
     "order": 3,
     "name": "DINOSAUR",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068548639031883",
     "order": 2,
     "name": "RE-BYE",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "r1",
-      "s1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "S1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068554685121099",
     "order": 1,
     "name": "200%",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "s1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["S1", "S1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "AKMU"
-    }
+    "artist": { "name": "AKMU" }
   },
   {
     "_id": "341068593724654156",
     "order": 3,
     "name": "AN ALIEN",
     "type": "LIMITED",
-    "cards": [
-      "R11",
-      "r14",
-      "r15"
-    ],
+    "cards": ["R11", "R14", "R15"],
     "length": 3,
-    "artist": {
-      "name": "LEE SUHYUN"
-    }
+    "artist": { "name": "LEE SUHYUN" }
   },
   {
     "_id": "341068615125041737",
     "order": 2,
     "name": "AAA",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "LEE SUHYUN"
-    }
+    "artist": { "name": "LEE SUHYUN" }
   },
   {
     "_id": "341068621266551372",
     "order": 1,
     "name": "ALIEN",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "LEE SUHYUN"
-    }
+    "artist": { "name": "LEE SUHYUN" }
   },
   {
     "_id": "341068789678342729",
     "order": 16,
     "name": "I LOVE U",
     "type": "LIMITED",
-    "cards": [
-      "S1",
-      "-",
-      "-",
-      "-"
-    ],
+    "cards": ["S1", "-", "-", "-"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068795760083531",
     "order": 15,
     "name": "AIR",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "s1",
-      "s4",
-      "s5"
-    ],
+    "cards": ["S5", "S1", "S4", "S5"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068801394082377",
     "order": 14,
     "name": "FIRST LOVE",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "S5",
-      "S5",
-      "S5"
-    ],
+    "cards": ["S5", "S5", "S5", "S5"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068806689391177",
     "order": 13,
     "name": "Remember",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "S5",
-      "-",
-      "-"
-    ],
+    "cards": ["S5", "S5", "-", "-"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068814826340939",
     "order": 12,
     "name": "Hold",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "S5",
-      "-"
-    ],
+    "cards": ["-", "-", "S5", "-"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068819898303051",
     "order": 11,
     "name": "Don't Flirt",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068824436539979",
     "order": 10,
     "name": "AH YEAH",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "s1",
-      "s4",
-      "s2"
-    ],
+    "cards": ["R1", "S1", "S4", "S2"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068828928639561",
     "order": 9,
     "name": "ISLAND",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "s1",
-      "s1",
-      "r1"
-    ],
+    "cards": ["S1", "S1", "S1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068834903425611",
     "order": 8,
     "name": "FOOL",
     "type": "LIMITED",
-    "cards": [
-      "s1",
-      "s5",
-      "s5",
-      "-"
-    ],
+    "cards": ["S1", "S5", "S5", "-"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068840309883465",
     "order": 7,
     "name": "SPECIAL NIGHT",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "s1",
-      "S1",
-      "s1"
-    ],
+    "cards": ["R1", "S1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068845907182155",
     "order": 6,
     "name": "LOVE ME LOVE ME",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["S1", "R1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068851379700297",
     "order": 5,
     "name": "Empty",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "s1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["R1", "S1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068856210489932",
     "order": 4,
     "name": "SOSO",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068861648405065",
     "order": 3,
     "name": "MILLIONS",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "r1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["R1", "R1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068866758115913",
     "order": 2,
     "name": "EVERYD4Y",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["S1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068916939817547",
     "order": 1,
     "name": "REALLY REALLY",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["S1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341068974925021771",
     "order": 6,
     "name": "WE NEED LOVE",
     "type": "NORMAL",
-    "cards": [
-      "A1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["A1", "S1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "YOON"
-    }
+    "artist": { "name": "YOON" }
   },
   {
     "_id": "341068980834796108",
     "order": 5,
     "name": "Give me a chance",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "S1",
-      "S1"
-    ],
+    "cards": ["-", "S1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "YOON"
-    }
+    "artist": { "name": "YOON" }
   },
   {
     "_id": "341068991884689995",
     "order": 4,
     "name": "BORN TO LOVE YOU",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "A1",
-      "A1"
-    ],
+    "cards": ["R1", "A1", "A1"],
     "length": 3,
-    "artist": {
-      "name": "YOON"
-    }
+    "artist": { "name": "YOON" }
   },
   {
     "_id": "341068998834651723",
     "order": 3,
     "name": "SKIP",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "R1",
-      "R1"
-    ],
+    "cards": ["-", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "YOON"
-    }
+    "artist": { "name": "YOON" }
   },
   {
     "_id": "341069007942582859",
     "order": 2,
     "name": "IYAH",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "YOON"
-    }
+    "artist": { "name": "YOON" }
   },
   {
     "_id": "341069017458410057",
     "order": 1,
     "name": "IT RAINS",
     "type": "NORMAL",
-    "cards": [
-      "R10",
-      "R10",
-      "R10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "YOON"
-    }
+    "artist": { "name": "YOON" }
   },
   {
     "_id": "341069149757243980",
     "order": 7,
     "name": "BOW-WOW",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "a1",
-      "S1"
-    ],
+    "cards": ["S1", "A1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069154152874571",
     "order": 6,
     "name": "LOVE IN DA CAR",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["S1", "S1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069163086742092",
     "order": 5,
     "name": "TANG!♡",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069174027584073",
     "order": 4,
     "name": "AURORA",
     "type": "LIMITED",
-    "cards": [
-      "r10",
-      "r10",
-      "r10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069179480179276",
     "order": 3,
     "name": "OK Man",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["S1", "S1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069182883856972",
     "order": 2,
     "name": "Run away",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["R1", "S1", "S1"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069193818407497",
     "order": 1,
     "name": "FIANCÉ",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "MINO"
-    }
+    "artist": { "name": "MINO" }
   },
   {
     "_id": "341069243883717195",
     "order": 2,
     "name": "Every night Every day",
     "type": "LIMITED",
-    "cards": [
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "JINU"
-    }
+    "artist": { "name": "JINU" }
   },
   {
     "_id": "341069247685853771",
     "order": 1,
     "name": "CALL ANYTIME",
     "type": "NORMAL",
-    "cards": [
-      "r10",
-      "r10",
-      "r10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "JINU"
-    }
+    "artist": { "name": "JINU" }
   },
   {
     "_id": "341069292198953545",
     "order": 17,
     "name": "All The World",
     "type": "LIMITED",
-    "cards": [
-      "S1",
-      "S1",
-      "S1",
-      "-",
-      "-",
-      "S1"
-    ],
+    "cards": ["S1", "S1", "S1", "-", "-", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069298471535177",
     "order": 16,
     "name": "FORREAL",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "S1",
-      "-",
-      "-",
-      "S1",
-      "S1"
-    ],
+    "cards": ["-", "S1", "-", "-", "S1", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069303216341579",
     "order": 15,
     "name": "BUTYOU",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "-",
-      "S5",
-      "-",
-      "s5",
-      "-"
-    ],
+    "cards": ["R1", "-", "S5", "-", "S5", "-"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069308198126155",
     "order": 14,
     "name": "WELCOME BACK",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
-    ],
+    "cards": ["-", "-", "-", "-", "-", "-"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069312255066700",
     "order": 13,
     "name": "Take me to higher",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "s5",
-      "s5",
-      "-",
-      "-",
-      "S5"
-    ],
+    "cards": ["-", "S5", "S5", "-", "-", "S5"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069316996727369",
     "order": 12,
     "name": "AIRPLANE",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "s5",
-      "-",
-      "s5",
-      "-"
-    ],
+    "cards": ["-", "-", "S5", "-", "S5", "-"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069322286793289",
     "order": 11,
     "name": "LONG TIME NO SEE",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "s1",
-      "R1",
-      "R1",
-      "s1",
-      "s1"
-    ],
+    "cards": ["R1", "S1", "R1", "R1", "S1", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069327557984841",
     "order": 10,
     "name": "FREEDOM",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "s5",
-      "s5",
-      "-",
-      "s5",
-      "s5"
-    ],
+    "cards": ["S5", "S5", "S5", "-", "S5", "S5"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069332474757705",
     "order": 9,
     "name": "RHYTHM TA",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "s3",
-      "r1",
-      "s1",
-      "R1",
-      "s5"
-    ],
+    "cards": ["S1", "S3", "R1", "S1", "R1", "S5"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069337536234060",
     "order": 8,
     "name": "Why Why Why",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "S1",
-      "S1",
-      "R1",
-      "s1",
-      "r1"
-    ],
+    "cards": ["R1", "S1", "S1", "R1", "S1", "R1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069342559961675",
     "order": 7,
     "name": "Holding On",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "r1",
-      "r1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1", "R1", "R1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069347454714441",
     "order": 6,
-    "name": "MY type",
+    "name": "MY TYPE",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "s1",
-      "r1",
-      "s1",
-      "r1",
-      "S1"
-    ],
+    "cards": ["S1", "S1", "R1", "S1", "R1", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069351805256265",
     "order": 5,
     "name": "Dive",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "r1",
-      "r1",
-      "r1",
-      "r1",
-      "r1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1", "R1", "R1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069358086226508",
     "order": 4,
     "name": "KILLING ME",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "s1",
-      "s1",
-      "r1",
-      "r1",
-      "s1"
-    ],
+    "cards": ["S1", "S1", "S1", "R1", "R1", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069361728979532",
     "order": 3,
     "name": "LOVE SCENARIO",
     "type": "NORMAL",
-    "cards": [
-      "r10",
-      "r10",
-      "r10",
-      "r10",
-      "r10",
-      "r10"
-    ],
+    "cards": ["R10", "R10", "R10", "R10", "R10", "R10"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069365293089353",
     "order": 2,
     "name": "DUMB&DUMBER",
     "type": "NORMAL",
-    "cards": [
-      "s5",
-      "r1",
-      "s1",
-      "s1",
-      "r1",
-      "s1"
-    ],
+    "cards": ["S5", "R1", "S1", "S1", "R1", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069372899459659",
     "order": 1,
     "name": "APOLOGY",
     "type": "NORMAL",
-    "cards": [
-      "s1",
-      "s1",
-      "s1",
-      "s1",
-      "r1",
-      "s1"
-    ],
+    "cards": ["S1", "S1", "S1", "S1", "R1", "S1"],
     "length": 6,
-    "artist": {
-      "name": "iKON"
-    }
+    "artist": { "name": "iKON" }
   },
   {
     "_id": "341069436587868748",
     "order": 5,
     "name": "RaiNing",
     "type": "LIMITED",
-    "cards": [
-      "S1",
-      "S1",
-      "-"
-    ],
+    "cards": ["S1", "S1", "-"],
     "length": 3,
-    "artist": {
-      "name": "BOBBY"
-    }
+    "artist": { "name": "BOBBY" }
   },
   {
     "_id": "341069439962186313",
     "order": 4,
     "name": "Let iT Go",
     "type": "LIMITED",
-    "cards": [
-      "R20",
-      "R20",
-      "R20"
-    ],
+    "cards": ["R20", "R20", "R20"],
     "length": 3,
-    "artist": {
-      "name": "BOBBY"
-    }
+    "artist": { "name": "BOBBY" }
   },
   {
     "_id": "341069445027856969",
     "order": 3,
     "name": "U MAD",
     "type": "NORMAL",
-    "cards": [
-      "S5",
-      "R1",
-      "R1"
-    ],
+    "cards": ["S5", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "BOBBY"
-    }
+    "artist": { "name": "BOBBY" }
   },
   {
     "_id": "341069450089333321",
     "order": 2,
     "name": "TENDAE",
     "type": "NORMAL",
-    "cards": [
-      "s3",
-      "r1",
-      "s3"
-    ],
+    "cards": ["S3", "R1", "S3"],
     "length": 3,
-    "artist": {
-      "name": "BOBBY"
-    }
+    "artist": { "name": "BOBBY" }
   },
   {
     "_id": "341069461068972619",
     "order": 1,
     "name": "LOVE AND FALL",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "BOBBY"
-    }
+    "artist": { "name": "BOBBY" }
   },
   {
     "_id": "341070771671532107",
     "order": 32,
     "name": "now look at me",
     "type": "LIMITED",
-    "cards": [
-      "r1",
-      "R1",
-      "S5",
-      "s5"
-    ],
+    "cards": ["R1", "R1", "S5", "S5"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341072158769807947",
     "order": 31,
     "name": "My Love is on fire",
     "type": "LIMITED",
-    "cards": [
-      "S2",
-      "R1",
-      "-",
-      "S1"
-    ],
+    "cards": ["S2", "R1", "-", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073352071316041",
     "order": 30,
     "name": "in your area",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073356464849481",
     "order": 29,
     "name": "Really",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073358572487241",
     "order": 28,
     "name": "with me",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073360393863756",
     "order": 27,
     "name": "Look at you",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "S5",
-      "S5"
-    ],
+    "cards": ["R1", "R1", "S5", "S5"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073480306917964",
     "order": 26,
     "name": "You gon' like that",
     "type": "NORMAL",
-    "cards": [
-      "S5",
-      "S1",
-      "s5",
-      "s5"
-    ],
+    "cards": ["S5", "S1", "S5", "S5"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073493646901833",
     "order": 25,
     "name": "Can you hear that",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "S5",
-      "S5",
-      "R1"
-    ],
+    "cards": ["-", "S5", "S5", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073496040800841",
     "order": 24,
     "name": "Hit you with that",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073498475594315",
     "order": 23,
     "name": "See U Later",
     "type": "NORMAL",
-    "cards": [
-      "S5",
-      "R1",
-      "S1",
-      "S4"
-    ],
+    "cards": ["S5", "R1", "S1", "S4"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073514222060108",
     "order": 22,
     "name": "5th ANNIVERSARY Event",
     "type": "EVENT",
-    "cards": [
-      "-",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["-", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073516067553868",
     "order": 21,
     "name": "[4+1]",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073519309750857",
     "order": 20,
     "name": "BOOMBAYAH",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "-",
-      "-",
-      "-"
-    ],
+    "cards": ["S5", "-", "-", "-"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073519846621769",
     "order": 16,
     "name": "Crazy Over You",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073520400269900",
     "order": 17,
     "name": "still looking for love",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073520959160908",
     "order": 14,
     "name": "THE SHOW Event",
     "type": "EVENT",
-    "cards": [
-      "-",
-      "-",
-      "-",
-      "-"
-    ],
+    "cards": ["-", "-", "-", "-"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073521180410444",
     "order": 11,
     "name": "2021 Season's Greetings Event",
     "type": "EVENT",
-    "cards": [
-      "R27",
-      "R28",
-      "R28",
-      "R31"
-    ],
+    "cards": ["R27", "R28", "R28", "R31"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073523748373065",
     "order": 19,
     "name": "Hope Not",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "S1"
-    ],
+    "cards": ["R1", "R1", "R1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073524017857097",
     "order": 15,
     "name": "Lovesick Girls",
     "type": "NORMAL",
-    "cards": [
-      "S5",
-      "S5",
-      "R1",
-      "S1"
-    ],
+    "cards": ["S5", "S5", "R1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073524375421513",
     "order": 12,
     "name": "Love To Hate Me",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["S1", "R1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073524698382921",
     "order": 13,
     "name": "Pretty Savage",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "-",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "-", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073525031830089",
     "order": 10,
     "name": "Kick It",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "-",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "-", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073527778050633",
     "order": 18,
     "name": "You Never Know",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073528655708745",
     "order": 9,
     "name": "Forever Young",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073529186288201",
     "order": 8,
     "name": "STAY",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073529623544395",
     "order": 7,
     "name": "AS IF IT'S YOUR LAST",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "S1",
-      "s5",
-      "R1"
-    ],
+    "cards": ["S1", "S1", "S5", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073529946505803",
     "order": 6,
     "name": "Don't Know What To Do",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["-", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073530304070217",
     "order": 5,
     "name": "How You Like That",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073530772783691",
     "order": 4,
     "name": "Kill This Love",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1", "R1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073531052753483",
     "order": 3,
     "name": "DDU-DU-DDU-DU",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "S1",
-      "S1",
-      "S1"
-    ],
+    "cards": ["S1", "S1", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073531513078345",
     "order": 2,
     "name": "PLAYING WITH FIRE",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "S5",
-      "S1"
-    ],
+    "cards": ["R1", "R1", "S5", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073531763688009",
     "order": 1,
     "name": "WHISTLE",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "S5",
-      "S1",
-      "S1"
-    ],
+    "cards": ["R1", "S5", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "341073748483375692",
     "order": 3,
     "name": "I'm not sorry",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "JENNIE"
-    }
+    "artist": { "name": "JENNIE" }
   },
   {
     "_id": "341073750772417100",
     "order": 2,
     "name": "SHINING SOLO",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "JENNIE"
-    }
+    "artist": { "name": "JENNIE" }
   },
   {
     "_id": "341073752526684747",
     "order": 1,
     "name": "SOLO",
     "type": "NORMAL",
-    "cards": [
-      "R21",
-      "R21",
-      "R24"
-    ],
+    "cards": ["R21", "R21", "R24"],
     "length": 3,
-    "artist": {
-      "name": "JENNIE"
-    }
+    "artist": { "name": "JENNIE" }
   },
   {
     "_id": "341073754114228811",
     "order": 2,
     "name": "Gone",
     "type": "LIMITED",
-    "cards": [
-      "R10",
-      "R10",
-      "R10"
-    ],
+    "cards": ["R10", "R10", "R10"],
     "length": 3,
-    "artist": {
-      "name": "ROSÉ"
-    }
+    "artist": { "name": "ROSÉ" }
   },
   {
     "_id": "341073756025782859",
     "order": 1,
     "name": "On The Ground",
     "type": "NORMAL",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "ROSÉ"
-    }
+    "artist": { "name": "ROSÉ" }
   },
   {
     "_id": "341073757547266635",
     "order": 4,
     "name": "love me",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "A1"
-    ],
+    "cards": ["R1", "R1", "A1"],
     "length": 3,
-    "artist": {
-      "name": "LISA"
-    }
+    "artist": { "name": "LISA" }
   },
   {
     "_id": "341073759085527627",
     "order": 3,
     "name": "Dolla bills",
     "type": "NORMAL",
-    "cards": [
-      "S1",
-      "R1",
-      "r1"
-    ],
+    "cards": ["S1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "LISA"
-    }
+    "artist": { "name": "LISA" }
   },
   {
     "_id": "341073760650003019",
     "order": 2,
     "name": "MONEY",
     "type": "LIMITED",
-    "cards": [
-      "R50",
-      "R50",
-      "R50"
-    ],
+    "cards": ["R50", "R50", "R50"],
     "length": 3,
-    "artist": {
-      "name": "LISA"
-    }
+    "artist": { "name": "LISA" }
   },
   {
     "_id": "341073762190361163",
     "order": 1,
     "name": "LALISA",
     "type": "LIMITED",
-    "cards": [
-      "R1",
-      "R1",
-      "R1"
-    ],
+    "cards": ["R1", "R1", "R1"],
     "length": 3,
-    "artist": {
-      "name": "LISA"
-    }
+    "artist": { "name": "LISA" }
   },
   {
     "_id": "341073763791536715",
@@ -2428,18 +1378,16 @@
       "S1",
       "-",
       "A1",
-      "a1",
+      "A1",
       "S1",
-      "a1",
-      "s1",
+      "A1",
+      "S1",
       "-",
       "A1",
-      "a1"
+      "A1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073765378032203",
@@ -2461,33 +1409,16 @@
       "S5"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073766830309963",
     "order": 19,
     "name": "IT'S OKAY",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "-",
-      "S1",
-      "-",
-      "S1",
-      "-",
-      "-",
-      "-",
-      "-",
-      "S1",
-      "-"
-    ],
+    "cards": ["-", "-", "-", "S1", "-", "S1", "-", "-", "-", "-", "S1", "-"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073768624423499",
@@ -2509,33 +1440,16 @@
       "-"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073770413294155",
     "order": 17,
     "name": "DARARI",
     "type": "LIMITED",
-    "cards": [
-      "S2",
-      "S4",
-      "S1",
-      "S1",
-      "S4",
-      "-",
-      "-",
-      "-",
-      "-",
-      "S1",
-      "-",
-      "-"
-    ],
+    "cards": ["S2", "S4", "S1", "S1", "S4", "-", "-", "-", "-", "S1", "-", "-"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073771916952139",
@@ -2557,9 +1471,7 @@
       "-"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073773608305227",
@@ -2581,57 +1493,25 @@
       "S1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073775103574603",
     "order": 14,
     "name": "BLING LIKE THIS",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "S1",
-      "-",
-      "-",
-      "-",
-      "S1",
-      "-",
-      "S1",
-      "S1",
-      "S1",
-      "-",
-      "S1"
-    ],
+    "cards": ["-", "S1", "-", "-", "-", "S1", "-", "S1", "S1", "S1", "-", "S1"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073776706847307",
     "order": 13,
     "name": "WELCOME TEUME",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "S5",
-      "S5",
-      "-",
-      "-",
-      "-",
-      "-",
-      "S5",
-      "-",
-      "S5",
-      "S5",
-      "-"
-    ],
+    "cards": ["S5", "S5", "S5", "-", "-", "-", "-", "S5", "-", "S5", "S5", "-"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073778433851979",
@@ -2653,81 +1533,34 @@
       "S5"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073779884032587",
     "order": 8,
     "name": "Orange",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "-",
-      "S5",
-      "S1",
-      "S5",
-      "-",
-      "S3",
-      "S4",
-      "-",
-      "-",
-      "S4"
-    ],
+    "cards": ["-", "-", "-", "S5", "S1", "S5", "-", "S3", "S4", "-", "-", "S4"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073781604745804",
     "order": 11,
     "name": "SLOWMOTION",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "S1",
-      "S1",
-      "-",
-      "S1",
-      "-",
-      "-",
-      "S1",
-      "S1"
-    ],
+    "cards": ["-", "-", "-", "-", "S1", "S1", "-", "S1", "-", "-", "S1", "S1"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073783257301580",
     "order": 10,
     "name": "You're the only one",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "S5",
-      "S1",
-      "-",
-      "-",
-      "S1",
-      "S1"
-    ],
+    "cards": ["-", "-", "-", "-", "-", "-", "S5", "S1", "-", "-", "S1", "S1"],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073784881545804",
@@ -2749,9 +1582,7 @@
       "S1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073786493207116",
@@ -2773,9 +1604,7 @@
       "R1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073788551561804",
@@ -2797,9 +1626,7 @@
       "R1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073790398104140",
@@ -2821,9 +1648,7 @@
       "R1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073791849333324",
@@ -2845,9 +1670,7 @@
       "-"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073794015691340",
@@ -2869,9 +1692,7 @@
       "R11"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073795703898700",
@@ -2893,9 +1714,7 @@
       "S1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341073797333385804",
@@ -2909,7 +1728,7 @@
       "R1",
       "R1",
       "S1",
-      "s1",
+      "S1",
       "R1",
       "R1",
       "R1",
@@ -2917,57 +1736,34 @@
       "R1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "341973217222591049",
     "order": 11,
     "name": "BE WELL",
     "type": "LIMITED",
-    "cards": [
-      "S1",
-      "S2",
-      "S1",
-      "S1"
-    ],
+    "cards": ["S1", "S2", "S1", "S1"],
     "length": 4,
-    "artist": {
-      "name": "SECHSKIES"
-    }
+    "artist": { "name": "SECHSKIES" }
   },
   {
     "_id": "341975138705605193",
     "order": 17,
     "name": "HOLIDAY",
     "type": "NORMAL",
-    "cards": [
-      "B5",
-      "-",
-      "A1",
-      "-"
-    ],
+    "cards": ["B5", "-", "A1", "-"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   },
   {
     "_id": "341976498892177996",
     "order": 33,
     "name": "Pink Venom",
     "type": "LIMITED",
-    "cards": [
-      "S5",
-      "S1",
-      "R3",
-      "S1"
-    ],
+    "cards": ["S5", "S1", "R3", "S1"],
     "length": 4,
-    "artist": {
-      "name": "BLACKPINK"
-    }
+    "artist": { "name": "BLACKPINK" }
   },
   {
     "_id": "342046183544324684",
@@ -2989,39 +1785,24 @@
       "A1"
     ],
     "length": 12,
-    "artist": {
-      "name": "TREASURE"
-    }
+    "artist": { "name": "TREASURE" }
   },
   {
     "_id": "342164258181612107",
     "order": 6,
     "name": "test",
     "type": "NORMAL",
-    "cards": [
-      "r1",
-      "-",
-      "-"
-    ],
+    "cards": ["R1", "-", "-"],
     "length": 3,
-    "artist": {
-      "name": "BOBBY"
-    }
+    "artist": { "name": "BOBBY" }
   },
   {
     "_id": "342231642950074953",
     "order": 18,
     "name": "I wanna be with you",
     "type": "LIMITED",
-    "cards": [
-      "-",
-      "C1",
-      "-",
-      "-"
-    ],
+    "cards": ["-", "C1", "-", "-"],
     "length": 4,
-    "artist": {
-      "name": "WINNER"
-    }
+    "artist": { "name": "WINNER" }
   }
 ]
