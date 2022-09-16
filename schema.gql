@@ -1,0 +1,28 @@
+type groups {
+  name: String @unique
+  card_position: [String!]
+  debut: Date
+  order: Int
+}
+
+type themes {
+  name: String @unique
+  type: ThemeCardType
+  artist: groups @relation
+  length: Int
+  cards: [String!]
+  order: Int
+}
+
+enum ThemeCardType {
+  NORMAL
+  LIMITED
+  EVENT
+}
+
+type Query {
+  allThemes: [themes!]
+  allGroups: [groups!]
+  listThemeByGroup(id: String!): [themes!]
+    @resolver(name: "theme_search_by_group", paginated: true)
+}
