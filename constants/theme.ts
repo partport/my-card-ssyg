@@ -38,6 +38,7 @@ export type ThemeCreateType = {
   status: "CREATE";
   data: Omit<ThemeType, "_id" | "artist"> & { isNew: boolean };
 };
+
 export type FaunaCreateThemeType = Omit<ThemeType, "_id" | "artist"> & {
   artist: { connect: string };
 };

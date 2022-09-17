@@ -20,7 +20,7 @@ export type Props = {
   grades: Array<string>;
   isNew: boolean;
   onSave: (params: any) => any;
-  onCancel: () => any;
+  onDelete: () => any;
 };
 
 const CardTheme: FC<Props> = ({
@@ -30,7 +30,7 @@ const CardTheme: FC<Props> = ({
   grades,
   isNew = false,
   onSave,
-  onCancel,
+  onDelete,
 }) => {
   const [isEdit, setIsEdit] = useState<boolean>(false);
   const [themeName, setThemeName] = useState<string>(name);
@@ -76,9 +76,9 @@ const CardTheme: FC<Props> = ({
     }
   };
 
-  const handleOnCancel = () => {
+  const handleOnDelete = () => {
     setIsEdit(false);
-    onCancel();
+    onDelete();
   };
 
   const handleCardChange = (card: string, index: number) => {
@@ -138,7 +138,7 @@ const CardTheme: FC<Props> = ({
             {(isEdit || isNew) && (
               <>
                 <ButtonSave onClick={handleOnSave} />
-                <ButtonDelete onClick={handleOnCancel} />
+                <ButtonDelete onClick={handleOnDelete} />
               </>
             )}
           </div>
