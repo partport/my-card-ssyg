@@ -17,6 +17,7 @@ import {
 } from '@/constants/theme';
 import { THEME_CARD_TYPE } from '@/constants/theme';
 import { putEntry } from '@/lib/fauna';
+import ExclamationIcon from '@/components/icon/ExclamationIcon';
 
 const fetcher = (id: string) => axios(id).then((res) => res.data);
 
@@ -166,7 +167,7 @@ const GroupDetail: NextPage = () => {
   const handleOnDelete = (id: string) => {
     setModalOpen(true);
     setDeleteId(id);
-    setThemes(themes.filter((v) => !v._id.startsWith("new")));
+    setThemes(themes.filter((v) => !v._id.startsWith('new')));
   };
 
   const onCloseModal = () => {
@@ -185,6 +186,10 @@ const GroupDetail: NextPage = () => {
     await mutate(`${API_PATH}?group=${id}`);
   };
 
+  const progressThemePoint = Math.floor(
+    (currentThemePoint(themes) / totalThemePoint(themes.length)) * 100
+  );
+
   return (
     <>
       <div className='flex flex-col'>
@@ -197,6 +202,15 @@ const GroupDetail: NextPage = () => {
               <p>
                 {currentThemePoint(themes)}/{totalThemePoint(themes.length)}
               </p>
+
+              <div className='w-full bg-gray-200 rounded-full dark:bg-gray-700'>
+                <div
+                  className='bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full'
+                  style={{ width: `${progressThemePoint}%` }}
+                >
+                  {progressThemePoint}%
+                </div>
+              </div>
             </Card>
           </div>
         </div>
@@ -224,6 +238,9 @@ const GroupDetail: NextPage = () => {
         <Modal.Body>
           <div className='text-center'>
             {/* <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" /> */}
+            <div className='mx-auto mb-4 h-14 w-14 text-gray-400'>
+              <ExclamationIcon />
+            </div>
             <h3 className='mb-5 text-lg font-normal text-gray-500 dark:text-gray-400'>
               Are you sure you want to delete this?
             </h3>
