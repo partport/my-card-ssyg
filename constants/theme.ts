@@ -25,8 +25,7 @@ export type ThemeType = {
   type: ThemeCardType;
   cards: Array<string>;
   length: number;
-  artist: { name: string };
-  isNew?: boolean;
+  artist: string;
 };
 
 export type ThemeUpdateType = {

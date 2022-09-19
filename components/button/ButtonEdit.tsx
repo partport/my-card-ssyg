@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Button } from 'flowbite-react';
-import PencilAltIcon from '../icon/PencilAltIcon';
+import PencilAltIcon from '@/components/icons/PencilAltIcon';
 
 const ButtonEdit: FC<{ onClick: any }> = ({ onClick }) => {
   return (

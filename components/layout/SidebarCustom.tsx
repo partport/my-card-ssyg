@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { Sidebar } from 'flowbite-react';
 import { ThemeType } from '@/constants/index';
-import HomeIcon from '../icon/HomeIcon';
-import UsersIcon from '../icon/UsersIcon';
+import HomeIcon from '@/components/icons/HomeIcon';
+import UsersIcon from '@/components/icons/UsersIcon';
+import ChartBarIcon from '@/components/icons/ChartBarIcon';
 
 const SidebarCustom: FC<{ groups: Array<ThemeType>; collapsed: boolean }> = ({
   groups,
@@ -22,6 +23,9 @@ const SidebarCustom: FC<{ groups: Array<ThemeType>; collapsed: boolean }> = ({
               </Sidebar.Item>
             ))}
           </Sidebar.Collapse>
+          <Sidebar.Item href='/stats' icon={ChartBarIcon}>
+            Stats
+          </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
     </Sidebar>

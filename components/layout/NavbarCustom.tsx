@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Navbar } from 'flowbite-react';
-import MenuIcon from '../icon/MenuIcon';
+import MenuIcon from '@/components/icons/MenuIcon';
 
 const NavbarCustom: FC<{ title: string; onClickMenu: any }> = ({
   title,

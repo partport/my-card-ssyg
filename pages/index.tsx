@@ -3,19 +3,16 @@ import { useRouter } from "next/router";
 import { Alert, Spinner } from "flowbite-react";
 import axios from "axios";
 import useSWR from "swr";
-import {
-  API_PATH,
-  ThemeCreateType,
-  ThemeType,
-  ThemeUpdateType,
-} from "@/constants/index";
-import { getAllThemes } from "@/lib/fauna";
-import { findTopFiveTheme } from "@/lib/utils/fn";
 import CardThemeTopFive from "@/components/card/CardThemeTopFive";
 import CardArtist from "@/components/card/CardArtist";
+import { findTopFiveTheme } from "@/lib/utils/fn";
+import { getAllThemes } from "@/lib/fauna";
 import { GroupType } from "@/constants/group";
-import { themesDB } from "database";
-// import { themes_db } from "database";
+import {
+  API_PATH,
+  ThemeType,
+} from "@/constants/index";
+
 
 const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 
@@ -50,7 +47,7 @@ const Home: NextPage<{ themes: Array<ThemeType> }> = (props) => {
   return (
     <>
       <CardThemeTopFive topFive={TOP_FIVE_THEME} />
-      <div className="mx-auto grid grid-cols-4 gap-4 mt-4">
+      <div className="mx-auto grid grid-cols-1 gap-4 mt-4 md:grid-cols-4">
         {groupList.map((item: GroupType) => (
           <CardArtist
             name={item.name}

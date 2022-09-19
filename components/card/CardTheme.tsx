@@ -1,10 +1,10 @@
 import { FC, MutableRefObject } from "react";
 import { useRef, useState } from "react";
 import { Card, Badge, TextInput, Select } from "flowbite-react";
-import ListGrades from "../list/ListGrades";
-import ButtonEdit from "../button/ButtonEdit";
-import ButtonSave from "../button/ButtonSave";
-import ButtonDelete from "../button/ButtonDelete";
+import ListGrades from "@/components/list/ListGrades";
+import ButtonEdit from "@/components/button/ButtonEdit";
+import ButtonSave from "@/components/button/ButtonSave";
+import ButtonDelete from "@/components/button/ButtonDelete";
 import {
   CARD_GRADE_STATUS,
   ThemeCardType,
@@ -90,7 +90,7 @@ const CardTheme: FC<Props> = ({
 
   return (
     <Card>
-      <div className="grid gap-4 grid-cols-2 overflow-auto">
+      <div className="grid gap-4 md:grid-cols-2 overflow-auto">
         <div className="flex flex-col">
           <div className="flex items-center gap-2 mb-2">
             {isEdit || isNew ? (

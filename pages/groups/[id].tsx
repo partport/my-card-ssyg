@@ -1,25 +1,26 @@
-import { NextPage } from 'next';
-import axios from 'axios';
-import { Alert, Button, Card, Modal, Spinner } from 'flowbite-react';
-import CardArtist from '@/components/card/CardArtist';
-import { currentThemePoint, totalThemePoint } from '@/lib/utils/fn';
-import ButtonAdd from '@/components/button/ButtonAdd';
-import CardTheme from '@/components/card/CardTheme';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import useSWR, { mutate } from 'swr';
-import { API_PATH } from '@/constants/api';
+import { NextPage } from "next";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import axios from "axios";
+import useSWR, { mutate } from "swr";
+import { Alert, Card, Spinner } from "flowbite-react";
+import CardArtist from "@/components/card/CardArtist";
+import ButtonAdd from "@/components/button/ButtonAdd";
+import CardTheme from "@/components/card/CardTheme";
+import NoticeModal from "@/components/modal/NoticeModal";
+import { API_PATH } from "@/constants/api";
 import {
-  FaunaCreateThemeType,
   ThemeCreateType,
   ThemeType,
   ThemeUpdateType,
-} from '@/constants/theme';
-import { THEME_CARD_TYPE } from '@/constants/theme';
-import { putEntry } from '@/lib/fauna';
-import ExclamationIcon from '@/components/icon/ExclamationIcon';
+  THEME_CARD_TYPE,
+} from "@/constants/theme";
+import { currentThemePoint, totalThemePoint } from "@/lib/utils/fn";
+import { putEntry } from "@/lib/fauna";
 
 const fetcher = (id: string) => axios(id).then((res) => res.data);
+
+type newTheme = Array<ThemeType & { isNew?: boolean }>;
 
 const GroupDetail: NextPage = () => {
   const router = useRouter();
@@ -28,8 +29,8 @@ const GroupDetail: NextPage = () => {
     id ? `${API_PATH.THEME}?group=${id}` : null,
     fetcher
   );
-  const [themes, setThemes] = useState<Array<ThemeType>>([]);
-  const [deleteId, setDeleteId] = useState<string>('');
+  const [themes, setThemes] = useState<newTheme>([]);
+  const [deleteId, setDeleteId] = useState<string>("");
   const [modalOpen, setModalOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -41,9 +42,9 @@ const GroupDetail: NextPage = () => {
 
   if (error) {
     return (
-      <Alert color='failure'>
+      <Alert color="failure">
         <span>
-          <span className='font-medium'>fail to load</span>
+          <span className="font-medium">fail to load</span>
         </span>
       </Alert>
     );
@@ -51,25 +52,25 @@ const GroupDetail: NextPage = () => {
 
   if (!themes || themes.length === 0) {
     return (
-      <div className='text-center'>
-        <Spinner color='purple' size='xl' aria-label='loading...' />
-        <span className='pl-3'>Loading...</span>
+      <div className="text-center">
+        <Spinner color="purple" size="xl" aria-label="loading..." />
+        <span className="pl-3">Loading...</span>
       </div>
     );
   }
 
-  const ARTIST = themes[0].artist.name;
+  const ARTIST = themes[0].artist;
 
   const handleNewSong = () => {
     setThemes([
       {
         _id: `new${themes.length + 1}`,
-        name: '',
+        name: "",
         length: themes[0].length,
-        cards: Array.from(themes[0].cards, () => '-'),
+        cards: Array.from(themes[0].cards, () => "-"),
         type: THEME_CARD_TYPE.NORMAL,
         isNew: true,
-        artist: { name: ARTIST },
+        artist: ARTIST,
         order: themes.length + 1,
       },
       ...themes,
@@ -81,7 +82,7 @@ const GroupDetail: NextPage = () => {
     _id: string
   ) => {
     const { status, data } = info;
-    if (status === 'UPDATE') {
+    if (status === "UPDATE") {
       const { order, name, cards } = data;
       // local state
       setThemes((prev) => {
@@ -120,7 +121,7 @@ const GroupDetail: NextPage = () => {
       } else {
         console.log(JSON.stringify(responseResult));
       }
-    } else if (status === 'CREATE') {
+    } else if (status === "CREATE") {
       const { order, name, type, cards, length, isNew } = info.data;
       // local state
       setThemes((prev) => {
@@ -133,7 +134,7 @@ const GroupDetail: NextPage = () => {
               type,
               cards,
               length,
-              artist: { name: ARTIST },
+              artist: ARTIST,
               isNew,
             };
           } else {
@@ -167,19 +168,19 @@ const GroupDetail: NextPage = () => {
   const handleOnDelete = (id: string) => {
     setModalOpen(true);
     setDeleteId(id);
-    setThemes(themes.filter((v) => !v._id.startsWith('new')));
+    setThemes(themes.filter((v) => !v._id.startsWith("new")));
   };
 
   const onCloseModal = () => {
     setModalOpen(false);
-    setDeleteId('undefined');
+    setDeleteId("undefined");
   };
 
   const onClickModal = async () => {
     setModalOpen(false);
 
     const responseResult = await putEntry(API_PATH.THEME, {
-      status: 'DELETE',
+      status: "DELETE",
       data: { _id: deleteId },
     });
     console.log(responseResult);
@@ -192,9 +193,9 @@ const GroupDetail: NextPage = () => {
 
   return (
     <>
-      <div className='flex flex-col'>
-        <div className='flex gap-4'>
-          <div className='w-[24rem]'>
+      <div className="flex flex-col">
+        <div className="flex gap-4">
+          <div className="w-[24rem]">
             <CardArtist name={ARTIST} />
           </div>
           <div>
@@ -203,9 +204,9 @@ const GroupDetail: NextPage = () => {
                 {currentThemePoint(themes)}/{totalThemePoint(themes.length)}
               </p>
 
-              <div className='w-full bg-gray-200 rounded-full dark:bg-gray-700'>
+              <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
                 <div
-                  className='bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full'
+                  className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
                   style={{ width: `${progressThemePoint}%` }}
                 >
                   {progressThemePoint}%
@@ -214,10 +215,10 @@ const GroupDetail: NextPage = () => {
             </Card>
           </div>
         </div>
-        <div className='flex justify-end gap-2 mb-2'>
+        <div className="flex justify-end gap-2 mb-2">
           <ButtonAdd onClick={handleNewSong} />
         </div>
-        <div className='flex gap-2 flex-col'>
+        <div className="flex gap-2 flex-col">
           {themes.map((item) => (
             <CardTheme
               key={item._id}
@@ -233,28 +234,11 @@ const GroupDetail: NextPage = () => {
         </div>
       </div>
 
-      <Modal show={modalOpen} size='md' popup={true} onClose={onCloseModal}>
-        <Modal.Header />
-        <Modal.Body>
-          <div className='text-center'>
-            {/* <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" /> */}
-            <div className='mx-auto mb-4 h-14 w-14 text-gray-400'>
-              <ExclamationIcon />
-            </div>
-            <h3 className='mb-5 text-lg font-normal text-gray-500 dark:text-gray-400'>
-              Are you sure you want to delete this?
-            </h3>
-            <div className='flex justify-center gap-4'>
-              <Button color='failure' onClick={onClickModal}>
-                Yes, Im sure
-              </Button>
-              <Button color='gray' onClick={onCloseModal}>
-                No, cancel
-              </Button>
-            </div>
-          </div>
-        </Modal.Body>
-      </Modal>
+      <NoticeModal
+        modalOpen={modalOpen}
+        onCloseModal={onCloseModal}
+        onClickModal={onClickModal}
+      />
     </>
   );
 };

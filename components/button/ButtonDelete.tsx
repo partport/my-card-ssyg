@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Button } from 'flowbite-react';
-import TrashIcon from '../icon/TrashIcon';
+import TrashIcon from '@/components/icons/TrashIcon';
 
 const ButtonDelete: FC<{ onClick: any }> = ({ onClick }) => {
   return (

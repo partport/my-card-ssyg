@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Button } from 'flowbite-react';
-import PlusIcon from '../icon/PlusIcon';
+import PlusIcon from '@/components/icons/PlusIcon';
 
 const ButtonAdd: FC<{ onClick: any }> = ({ onClick }) => {
   return (

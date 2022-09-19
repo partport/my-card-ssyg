@@ -1,6 +1,6 @@
 import { FC } from "react";
-import CardGrade from "../card/CardGrade";
 import classNames from "classnames";
+import CardGrade from "@/components/card/CardGrade";
 import { CardGradeStatus } from "@/constants/index";
 
 export type Props = {
@@ -19,7 +19,10 @@ const ListGrades: FC<Props> = (props) => {
     <div
       className={classNames(
         "flex gap-2 flex-wrap text-white font-bold font-mono",
-        "w-[26.5rem]"
+        `md:w-[26.5rem]`,
+        { ["w-[13.5rem]"]: grades.length === 3 },
+        { ["w-[18rem]"]: grades.length === 4 },
+        { ["w-[26.5rem]"]: grades.length >= 6 }
       )}
     >
       {grades.map((card, index) => (

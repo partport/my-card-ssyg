@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Button } from 'flowbite-react';
-import UploadIcon from '../icon/UploadIcon';
+import UploadIcon from '@/components/icons/UploadIcon';
 
 const ButtonSave: FC<{ onClick: any }> = ({ onClick }) => {
   return (

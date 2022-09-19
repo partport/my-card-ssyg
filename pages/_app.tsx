@@ -1,9 +1,9 @@
-import "@/styles/globals.css";
-import Layout from "@/components/layout/Layout";
+import type { AppProps } from "next/app";
 import useSWR from "swr";
 import axios from "axios";
-import type { AppProps } from "next/app";
+import Layout from "@/components/layout/Layout";
 import { API_PATH } from "../constants";
+import "@/styles/globals.css";
 
 const fetcher = (url: any) => axios.get(url).then((res) => res.data);
 

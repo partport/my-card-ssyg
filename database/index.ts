@@ -20,7 +20,7 @@ const getAllThemes = () => {
 
 const findThemeByGroupId = (id: string) => {
   const group = groups_db.find((x) => x._id === id);
-  return getAllThemes().filter(({ artist }) => artist.name === group?.name);
+  return getAllThemes().filter(({ artist }) => artist === group?.name);
 };
 
 export const themesDB = {

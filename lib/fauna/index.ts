@@ -37,18 +37,18 @@ export const getAllThemes = async () => {
   const {
     allThemes: { data },
   } = await graphQLClient.request(query);
-  // data.map((x) => {
-  //   console.log({
-  //     _id: x._id,
-  //     order: x.order,
-  //     name: x.name,
-  //     type: x.type,
-  //     cards: x.card as ThemeCardType,
-  //     length: x.length,
-  //     artist: x.artist,
-  //   });
-  // });
-  return data;
+
+  return data.map((item: any) => {
+    return {
+      _id: item._id,
+      order: item.order,
+      name: item.name,
+      type: item.type,
+      cards: item.cards,
+      length: item.length,
+      artist: item.artist.name,
+    };
+  });
 };
 
 export const createThemes = async (newTheme: FaunaCreateThemeType) => {
@@ -159,7 +159,17 @@ export const listThemeByGroup = async (id: string) => {
       listThemeByGroup: { data },
     } = await graphQLClient.request(query, groupId);
 
-    return data;
+    return data.map((item: any) => {
+      return {
+        _id: item._id,
+        order: item.order,
+        name: item.name,
+        type: item.type,
+        cards: item.cards,
+        length: item.length,
+        artist: item.artist.name,
+      };
+    });
   } catch (error) {
     const errorResponse = JSON.stringify(error, undefined, 2);
     console.error(errorResponse);
