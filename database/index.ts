@@ -1,8 +1,7 @@
-import { ThemeUpdateType } from "./../constants/theme";
-import { ThemeCardType } from "@/constants/theme";
-import themes_db from "./json/themes.json";
-// import fs from "fs";
-import groups_db from "./json/groups.json";
+import { ThemeCardType } from '@/constants/theme';
+import themes_db from './json/themes.json';
+import groups_db from './json/groups.json';
+import songs_db from './json/songs.json';
 
 const getAllThemes = () => {
   return themes_db.map(({ _id, order, name, type, cards, length, artist }) => {
@@ -30,4 +29,21 @@ export const themesDB = {
 
 export const groupDB = {
   getAll: () => groups_db,
+};
+
+export const songDB = {
+  getAll: () =>
+    songs_db.map((item) => {
+      const artistId = groups_db.find((x) => x.name === item.artist)?._id;
+      return {
+        artist: item.artist,
+        artistConnect: artistId,
+        title: item.title,
+        album: item.album,
+        track: item.track,
+        release_date: item.release_date,
+        length: parseInt(item.length) | 0,
+        notes: parseInt(item.notes) | 0,
+      };
+    }),
 };
