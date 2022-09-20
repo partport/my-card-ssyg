@@ -17,9 +17,11 @@ type themes {
 type songs {
   name: String @unique
   artist: groups @relation
+  album: String
+  track: Int
+  release_date: Date
   length: Int
   notes: Int
-  album: String
 }
 
 enum ThemeCardType {
