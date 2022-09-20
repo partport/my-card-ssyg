@@ -1,4 +1,4 @@
-import { ThemeType } from "@/constants/theme";
+import { ThemeType } from "@/constants/themes";
 import { FC } from "react";
 import ListGrades from "@/components/list/ListGrades";
 

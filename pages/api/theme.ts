@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { ThemeType } from "@/constants/theme";
+import { ThemeType } from "@/constants/themes";
 import type { NextApiRequest, NextApiResponse } from "next";
 import {
   createThemes,

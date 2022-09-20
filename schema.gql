@@ -15,7 +15,8 @@ type themes {
 }
 
 type songs {
-  name: String @unique
+  key: String @unique
+  title: String
   artist: groups @relation
   album: String
   track: Int
@@ -33,6 +34,7 @@ enum ThemeCardType {
 type Query {
   allThemes: [themes!]
   allGroups: [groups!]
+  allSongs: [songs!]
   listThemeByGroup(id: String!): [themes!]
     @resolver(name: "theme_search_by_group", paginated: true)
 }

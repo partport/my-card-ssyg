@@ -1,13 +1,14 @@
+import { SongsType, FaunaCreateSongType } from './../../constants/songs';
 import {
   FaunaCreateThemeType,
   ThemeCardType,
   ThemeType,
-} from "@/constants/theme";
-import { GraphQLClient, gql } from "graphql-request";
+} from '@/constants/themes';
+import { GraphQLClient, gql } from 'graphql-request';
 
 const CLIENT_SECRET =
   process.env.FAUNA_ADMIN_KEY || process.env.FAUNA_CLIENT_SECRET;
-const FAUNA_GRAPHQL_BASE_URL = "https://graphql.fauna.com/graphql";
+const FAUNA_GRAPHQL_BASE_URL = 'https://graphql.fauna.com/graphql';
 
 const graphQLClient = new GraphQLClient(FAUNA_GRAPHQL_BASE_URL, {
   headers: {
@@ -91,7 +92,7 @@ export const updateThemeCard = async (
     id,
     data,
   };
-  console.log(ThemesInput);
+  console.info(ThemesInput);
   const mutation = gql`
     mutation updateThemes($id: ID!, $data: ThemesInput!) {
       updateThemes(id: $id, data: $data) {
@@ -206,21 +207,96 @@ export const deleteThemeCard = async (id: string) => {
   }
 };
 
+export const getAllSongs = async () => {
+  const query = gql`
+    query getAllSongs {
+      allSongs(_size: 500) {
+        data {
+          _id
+          title
+          album
+          track
+          release_date
+          length
+          notes
+          artist {
+            name
+          }
+        }
+      }
+    }
+  `;
+
+  const {
+    allSongs: { data },
+  } = await graphQLClient.request(query);
+
+  return data.map((item: any) => {
+    return {
+      _id: item._id,
+      title: item.title,
+      album: item.album,
+      track: item.track,
+      releaseDate: item.release_date,
+      length: item.length,
+      notes: item.notes,
+      artist: item.artist.name,
+    };
+  });
+};
+
+export const createSongs = async (newSong: FaunaCreateSongType) => {
+  const SongsInput = {
+    input: Object.assign(newSong, {
+      key: `${newSong.title} - ${newSong.album}`,
+    }),
+  };
+
+  const mutation = gql`
+    mutation createSongs($input: SongsInput!) {
+      createSongs(data: $input) {
+        _id
+        key
+        title
+        album
+        track
+        release_date
+        length
+        notes
+        artist {
+          name
+        }
+      }
+    }
+  `;
+
+  try {
+    const { createSongs } = await graphQLClient.request(mutation, SongsInput);
+    return createSongs;
+  } catch (error) {
+    const errorResponse = JSON.stringify(error, undefined, 2);
+    console.error(errorResponse);
+
+    return error;
+  }
+};
+
 export const putEntry = async (
   path: string,
   payload: {
-    status: "UPDATE" | "CREATE" | "DELETE";
+    status: 'UPDATE' | 'CREATE' | 'DELETE';
     data:
-      | Pick<ThemeType, "order" | "name" | "cards">
+      | Pick<ThemeType, 'order' | 'name' | 'cards'>
       | FaunaCreateThemeType
-      | Pick<ThemeType, "_id">;
+      | Pick<ThemeType, '_id'>
+      | FaunaCreateSongType;
   }
 ) => {
   return fetch(path, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify(payload),
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   }).then((res) => (res.ok ? res.json() : Promise.reject(res)));
 };

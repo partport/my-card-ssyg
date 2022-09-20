@@ -14,7 +14,7 @@ import {
   ThemeType,
   ThemeUpdateType,
   THEME_CARD_TYPE,
-} from "@/constants/theme";
+} from "@/constants/themes";
 import { currentThemePoint, totalThemePoint } from "@/lib/utils/fn";
 import { putEntry } from "@/lib/fauna";
 

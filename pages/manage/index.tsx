@@ -1,16 +1,18 @@
 import type { GetStaticProps, NextPage } from 'next';
 import axios from 'axios';
-import useSWR from 'swr';
+import useSWR, { mutate } from 'swr';
 import { Alert, Card, Spinner } from 'flowbite-react';
 import { API_PATH } from '@/constants/api';
 import ButtonAdd from '@/components/button/ButtonAdd';
 import CheckCircleIcon from '@/components/icons/CheckCircleIcon';
 import XCircleIcon from '@/components/icons/XCircleIcon';
 import { songDB } from 'database';
+import { SongsType } from '@/constants/songs';
+import { putEntry } from '@/lib/fauna';
 
 const fetcher = (url: any) => axios.get(url).then((res) => res.data);
 
-const StatsPage: NextPage<{ songs: Array<any> }> = (props) => {
+const ManagePage: NextPage<{ songs: Array<any> }> = (props) => {
   const { data, error } = useSWR(API_PATH.SONGS, fetcher);
   if (error) {
     return (
@@ -42,8 +44,25 @@ const StatsPage: NextPage<{ songs: Array<any> }> = (props) => {
     return acc;
   }, {});
 
-  const handleAdd = (name: string) => {
-    console.log(SongByArtist[name]);
+  const handleAdd = async (name: string) => {
+    SongByArtist[name].map(async (item: any) => {
+      const res = await putEntry(API_PATH.SONGS, {
+        status: 'CREATE',
+        data: {
+          title: item.title,
+          album: item.album,
+          track: item.track,
+          release_date: item.release_date,
+          length: item.length,
+          notes: item.notes,
+          artist: {
+            connect: item.artist_connect,
+          },
+        },
+      });
+      console.log(res);
+      await mutate(API_PATH.SONGS);
+    });
   };
 
   return (
@@ -56,17 +75,25 @@ const StatsPage: NextPage<{ songs: Array<any> }> = (props) => {
               <ButtonAdd onClick={() => handleAdd(name)} />
             </div>
             {SongByArtist[name].map((item: any) => (
-              <div className='grid grid-cols-7 w-full' key={item.title}>
+              <div className='grid grid-cols-12 w-full' key={item.title}>
                 <div>
-                  <p className='text-green-600'>
-                    <CheckCircleIcon />
-                  </p>
-                  <p className='text-red-600'>{/* <XCircleIcon /> */}</p>
+                  {data.findIndex(
+                    (x: SongsType) =>
+                      x.title === item.title && x.artist === item.artist
+                  ) !== -1 ? (
+                    <p className='text-green-600'>
+                      <CheckCircleIcon />
+                    </p>
+                  ) : (
+                    <p className='text-red-600'>
+                      <XCircleIcon />
+                    </p>
+                  )}
                 </div>
-                <p>{item.title}</p>
-                <p>{item.album}</p>
+                <p className='col-span-4'>{item.title}</p>
+                <p className='col-span-2'>{item.album}</p>
                 <p>{item.track}</p>
-                <p>{item.release_date}</p>
+                <p className='col-span-2'>{item.release_date}</p>
                 <p>{item.length}</p>
                 <p>{item.notes}</p>
               </div>
@@ -77,7 +104,7 @@ const StatsPage: NextPage<{ songs: Array<any> }> = (props) => {
     </div>
   );
 };
-export default StatsPage;
+export default ManagePage;
 
 export const getStaticProps: GetStaticProps = async () => {
   const songs = songDB.getAll();
@@ -85,5 +112,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       songs,
     },
+    revalidate: 10,
   };
 };
