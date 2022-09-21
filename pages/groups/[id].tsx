@@ -36,7 +36,6 @@ const GroupDetail: NextPage = () => {
   useEffect(() => {
     if (data) {
       setThemes(data.sort((a: ThemeType, b: ThemeType) => b.order - a.order));
-      setThemes(data.sort((a: ThemeType, b: ThemeType) => b.order - a.order));
     }
   }, [data]);
 

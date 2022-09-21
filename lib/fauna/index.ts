@@ -1,14 +1,14 @@
-import { SongsType, FaunaCreateSongType } from './../../constants/songs';
+import { SongsType, FaunaCreateSongType } from "./../../constants/songs";
 import {
   FaunaCreateThemeType,
   ThemeCardType,
   ThemeType,
-} from '@/constants/themes';
-import { GraphQLClient, gql } from 'graphql-request';
+} from "@/constants/themes";
+import { GraphQLClient, gql } from "graphql-request";
 
 const CLIENT_SECRET =
   process.env.FAUNA_ADMIN_KEY || process.env.FAUNA_CLIENT_SECRET;
-const FAUNA_GRAPHQL_BASE_URL = 'https://graphql.fauna.com/graphql';
+const FAUNA_GRAPHQL_BASE_URL = "https://graphql.fauna.com/graphql";
 
 const graphQLClient = new GraphQLClient(FAUNA_GRAPHQL_BASE_URL, {
   headers: {
@@ -131,7 +131,13 @@ export const getAllGroups = async () => {
     allGroups: { data },
   } = await graphQLClient.request(query);
 
-  return data;
+  return data.map((item: any) => {
+    return {
+      _id: item._id,
+      name: item.name,
+      cardPosition: item.card_position,
+    };
+  });
 };
 
 export const listThemeByGroup = async (id: string) => {
@@ -284,19 +290,19 @@ export const createSongs = async (newSong: FaunaCreateSongType) => {
 export const putEntry = async (
   path: string,
   payload: {
-    status: 'UPDATE' | 'CREATE' | 'DELETE';
+    status: "UPDATE" | "CREATE" | "DELETE";
     data:
-      | Pick<ThemeType, 'order' | 'name' | 'cards'>
+      | Pick<ThemeType, "order" | "name" | "cards">
       | FaunaCreateThemeType
-      | Pick<ThemeType, '_id'>
+      | Pick<ThemeType, "_id">
       | FaunaCreateSongType;
   }
 ) => {
   return fetch(path, {
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify(payload),
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   }).then((res) => (res.ok ? res.json() : Promise.reject(res)));
 };

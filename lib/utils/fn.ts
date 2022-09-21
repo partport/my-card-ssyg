@@ -40,3 +40,16 @@ export const findTopFiveTheme = (themes: Array<ThemeType>) => {
   });
   return gradeList.sort((a, b) => b.point - a.point).slice(0, 5);
 };
+
+export const listSongByArtist = (songs: any) => {
+  return songs.reduce((acc: any, item: any) => {
+    const key = item["artist"];
+
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(item);
+
+    return acc;
+  }, {});
+};
