@@ -8,10 +8,13 @@ export type SongsType = {
   length: number;
   notes: number;
 };
+export type SongsNewType = Omit<SongsType, "_id" | "artist"> & {
+  artist: string;
+};
 
 export type FaunaCreateSongType = Omit<
   SongsType,
-  '_id' | 'artist' | 'releaseDate'
+  "_id" | "artist" | "releaseDate"
 > & {
   artist: { connect: string };
   release_date: Date;
