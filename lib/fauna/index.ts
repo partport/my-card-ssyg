@@ -1,14 +1,18 @@
-import { SongsType, FaunaCreateSongType } from "./../../constants/songs";
+import {
+  FaunaCreateSongType,
+  FaunaUpdateSongType,
+} from './../../constants/songs';
 import {
   FaunaCreateThemeType,
   ThemeCardType,
   ThemeType,
-} from "@/constants/themes";
-import { GraphQLClient, gql } from "graphql-request";
+  ThemeUpdateType,
+} from '@/constants/themes';
+import { GraphQLClient, gql } from 'graphql-request';
 
 const CLIENT_SECRET =
   process.env.FAUNA_ADMIN_KEY || process.env.FAUNA_CLIENT_SECRET;
-const FAUNA_GRAPHQL_BASE_URL = "https://graphql.fauna.com/graphql";
+const FAUNA_GRAPHQL_BASE_URL = 'https://graphql.fauna.com/graphql';
 
 const graphQLClient = new GraphQLClient(FAUNA_GRAPHQL_BASE_URL, {
   headers: {
@@ -86,7 +90,7 @@ export const createThemes = async (newTheme: FaunaCreateThemeType) => {
 
 export const updateThemeCard = async (
   id: string,
-  data: { order: number; name: string; cards: Array<string> }
+  data: ThemeUpdateType
 ) => {
   const ThemesInput = {
     id,
@@ -287,22 +291,60 @@ export const createSongs = async (newSong: FaunaCreateSongType) => {
   }
 };
 
+export const updateSong = async (
+  id: string,
+  data: Omit<FaunaUpdateSongType, '_id'>
+) => {
+  const SongsInput = {
+    id,
+    data,
+  };
+  const mutation = gql`
+    mutation updateSongs($id: ID!, $data: SongsInput!) {
+      updateSongs(id: $id, data: $data) {
+        _id
+        key
+        title
+        album
+        track
+        release_date
+        length
+        notes
+        artist {
+          name
+        }
+      }
+    }
+  `;
+
+  try {
+    const { updateSongs } = await graphQLClient.request(mutation, SongsInput);
+    return updateSongs;
+  } catch (error) {
+    const errorResponse = JSON.stringify(error, undefined, 2);
+    console.error(errorResponse);
+
+    return error;
+  }
+};
+
 export const putEntry = async (
   path: string,
   payload: {
-    status: "UPDATE" | "CREATE" | "DELETE";
+    status: 'UPDATE' | 'CREATE' | 'DELETE';
     data:
-      | Pick<ThemeType, "order" | "name" | "cards">
+      | Pick<ThemeType, 'order' | 'name' | 'cards'>
       | FaunaCreateThemeType
-      | Pick<ThemeType, "_id">
-      | FaunaCreateSongType;
+      | Pick<ThemeType, '_id'>
+      | FaunaCreateSongType
+      | FaunaUpdateSongType;
   }
 ) => {
   return fetch(path, {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify(payload),
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   }).then((res) => (res.ok ? res.json() : Promise.reject(res)));
 };

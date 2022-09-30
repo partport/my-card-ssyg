@@ -47,7 +47,7 @@ const Home: NextPage<{ themes: Array<ThemeType> }> = (props) => {
   return (
     <>
       <CardThemeTopFive topFive={TOP_FIVE_THEME} />
-      <div className="mx-auto grid grid-cols-1 gap-4 mt-4 md:grid-cols-4">
+      <div className="mx-auto grid grid-cols-1 gap-4 mt-4 md:grid-cols-5">
         {groupList.map((item: GroupType) => (
           <CardArtist
             name={item.name}

@@ -4,6 +4,7 @@ import { ThemeType } from '@/constants/index';
 import HomeIcon from '@/components/icons/HomeIcon';
 import UsersIcon from '@/components/icons/UsersIcon';
 import ChartBarIcon from '@/components/icons/ChartBarIcon';
+import PlayIcon from '@/components/icons/PlayIcon';
 
 const SidebarCustom: FC<{ groups: Array<ThemeType>; collapsed: boolean }> = ({
   groups,
@@ -25,6 +26,9 @@ const SidebarCustom: FC<{ groups: Array<ThemeType>; collapsed: boolean }> = ({
           </Sidebar.Collapse>
           <Sidebar.Item href='/stats' icon={ChartBarIcon}>
             Stats
+          </Sidebar.Item>
+          <Sidebar.Item href='/songs' icon={PlayIcon}>
+            Songs
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
