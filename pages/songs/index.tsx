@@ -12,7 +12,7 @@ import {
 } from '@/constants/songs';
 import { GroupType } from '@/constants/group';
 import { putEntry } from '@/lib/fauna';
-import { listSongByArtist } from '@/lib/utils/fn';
+import { listItemByArtist } from '@/lib/utils/fn';
 import SongModal from '@/components/modal/SongModal';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -65,7 +65,7 @@ const ManagePage: NextPage = () => {
     );
   }
 
-  const SongByArtist = listSongByArtist(data);
+  const SongByArtist = listItemByArtist(data);
   const ARTIST = Object.keys(SongByArtist);
 
   const handleOnClickAdd = async () => {

@@ -2,67 +2,37 @@
   {
     "_id": "339975178070000204",
     "name": "SECHSKIES",
-    "cardPosition": [
-      "EUN JIWON",
-      "KIM JAE DUCK",
-      "LEE JAIJIN",
-      "JANG SUWON"
-    ]
+    "cardPosition": ["EUN JIWON", "KIM JAE DUCK", "LEE JAIJIN", "JANG SUWON"]
   },
   {
     "_id": "339975213509771852",
     "name": "EUN JIWON",
-    "cardPosition": [
-      "EUN JIWON Vocal",
-      "EUN JIWON Dance",
-      "EUN JIWON Rhythm"
-    ]
+    "cardPosition": ["EUN JIWON Vocal", "EUN JIWON Dance", "EUN JIWON Rhythm"]
   },
   {
     "_id": "339975227347829324",
     "name": "BIGBANG",
-    "cardPosition": [
-      "G-DRAGON",
-      "TAEYANG",
-      "T.O.P",
-      "DAESUNG"
-    ]
+    "cardPosition": ["G-DRAGON", "TAEYANG", "T.O.P", "DAESUNG"]
   },
   {
     "_id": "339975240791622220",
     "name": "TAEYANG",
-    "cardPosition": [
-      "TAEYANG Vocal",
-      "TAEYANG Dance",
-      "TAEYANG Rhythm"
-    ]
+    "cardPosition": ["TAEYANG Vocal", "TAEYANG Dance", "TAEYANG Rhythm"]
   },
   {
     "_id": "339975254990389836",
     "name": "DAESUNG",
-    "cardPosition": [
-      "DAESUNG Vocal",
-      "DAESUNG Dance",
-      "DAESUNG Rhythm"
-    ]
+    "cardPosition": ["DAESUNG Vocal", "DAESUNG Dance", "DAESUNG Rhythm"]
   },
   {
     "_id": "339975271016825420",
     "name": "G-DRAGON",
-    "cardPosition": [
-      "G-DRAGON Vocal",
-      "G-DRAGON Dance",
-      "G-DRAGON Rhythm"
-    ]
+    "cardPosition": ["G-DRAGON Vocal", "G-DRAGON Dance", "G-DRAGON Rhythm"]
   },
   {
     "_id": "339975278913651276",
     "name": "T.O.P",
-    "cardPosition": [
-      "T.O.P Vocal",
-      "T.O.P Dance",
-      "T.O.P Rhythm"
-    ]
+    "cardPosition": ["T.O.P Vocal", "T.O.P Dance", "T.O.P Rhythm"]
   },
   {
     "_id": "339975288117002828",
@@ -106,97 +76,52 @@
   {
     "_id": "339975332409901644",
     "name": "WINNER",
-    "cardPosition": [
-      "JINU",
-      "HOONY",
-      "MINO",
-      "YOON"
-    ]
+    "cardPosition": ["JINU", "HOONY", "MINO", "YOON"]
   },
   {
     "_id": "339975343288877644",
     "name": "YOON",
-    "cardPosition": [
-      "YOON Vocal",
-      "YOON Dance",
-      "YOON Rhythm"
-    ]
+    "cardPosition": ["YOON Vocal", "YOON Dance", "YOON Rhythm"]
   },
   {
     "_id": "339975350205284940",
     "name": "MINO",
-    "cardPosition": [
-      "MINO Vocal",
-      "MINO Dance",
-      "MINO Rhythm"
-    ]
+    "cardPosition": ["MINO Vocal", "MINO Dance", "MINO Rhythm"]
   },
   {
     "_id": "339975356611035724",
     "name": "JINU",
-    "cardPosition": [
-      "JINU Vocal",
-      "JINU Dance",
-      "JINU Rhythm"
-    ]
+    "cardPosition": ["JINU Vocal", "JINU Dance", "JINU Rhythm"]
   },
   {
     "_id": "339975364990206540",
     "name": "iKON",
-    "cardPosition": [
-      "JAY",
-      "SONG",
-      "BOBBY",
-      "DK",
-      "JU-NE",
-      "CHAN"
-    ]
+    "cardPosition": ["JAY", "SONG", "BOBBY", "DK", "JU-NE", "CHAN"]
   },
   {
     "_id": "339975388325216844",
     "name": "BOBBY",
-    "cardPosition": [
-      "BOBBY Vocal",
-      "BOBBY Dance",
-      "BOBBY Rhythm"
-    ]
+    "cardPosition": ["BOBBY Vocal", "BOBBY Dance", "BOBBY Rhythm"]
   },
   {
     "_id": "339975399865844300",
     "name": "BLACKPINK",
-    "cardPosition": [
-      "JISOO",
-      "JENNIE",
-      "ROSÉ",
-      "LISA"
-    ]
+    "cardPosition": ["JISOO", "JENNIE", "ROSÉ", "LISA"]
   },
   {
     "_id": "339975409844093516",
     "name": "JENNIE",
-    "cardPosition": [
-      "JENNIE Vocal",
-      "JENNIE Dance",
-      "JENNIE Rhythm"
-    ]
+    "cardPosition": ["JENNIE Vocal", "JENNIE Dance", "JENNIE Rhythm"]
   },
   {
     "_id": "339975420273230412",
     "name": "ROSÉ",
-    "cardPosition": [
-      "ROSÉ Vocal",
-      "ROSÉ Dance",
-      "ROSÉ Rhythm"
-    ]
+    "cardPosition": ["ROSÉ Vocal", "ROSÉ Dance", "ROSÉ Rhythm"]
   },
   {
     "_id": "339975426169373260",
     "name": "LISA",
-    "cardPosition": [
-      "LISA Vocal",
-      "LISA Dance",
-      "LISA Rhythm"
-    ]
+    "cardPosition": ["LISA Vocal", "LISA Dance", "LISA Rhythm"]
   },
   {
     "_id": "339975435861361228",

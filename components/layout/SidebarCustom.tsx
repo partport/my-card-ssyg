@@ -24,11 +24,11 @@ const SidebarCustom: FC<{ groups: Array<ThemeType>; collapsed: boolean }> = ({
               </Sidebar.Item>
             ))}
           </Sidebar.Collapse>
-          <Sidebar.Item href='/stats' icon={ChartBarIcon}>
-            Stats
-          </Sidebar.Item>
           <Sidebar.Item href='/songs' icon={PlayIcon}>
             Songs
+          </Sidebar.Item>
+          <Sidebar.Item href='/stats' icon={ChartBarIcon}>
+            Stats
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
