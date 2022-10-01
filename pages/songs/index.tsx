@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import axios from 'axios';
 import useSWR, { mutate } from 'swr';
-import { Alert, Card, Spinner } from 'flowbite-react';
+import { Alert, Card, Tabs } from 'flowbite-react';
 import { API_PATH } from '@/constants/api';
 import ButtonAdd from '@/components/button/ButtonAdd';
 import {
@@ -37,7 +37,7 @@ const ManagePage: NextPage = () => {
   }
   if (!data) {
     return (
-      <div className='grid grid-cols-1 gap-2'>
+      <div className='grid grid-cols-1 gap-2 mt-12'>
         {Array.from(Array(10).keys()).map((i) => (
           <Card key={i}>
             <div className='flex flex-wrap break-words flex-column animate-pulse'>
@@ -136,8 +136,43 @@ const ManagePage: NextPage = () => {
         <div className='flex justify-end'>
           <ButtonAdd onClick={() => handleOnClickAdd()} />
         </div>
+        <Tabs.Group aria-label='Tabs with underline' style='underline'>
+          {ARTIST.map((name: string) => (
+            <Tabs.Item title={name} key={name}>
+              <Card>
+                <div className='flex flex-wrap break-words flex-column'>
+                  <div className='flex items-center gap-4 mb-4 w-full'>
+                    <p className='font-bold'>{name}</p>
+                  </div>
+                  {SongByArtist[name].map((item: any) => (
+                    <div
+                      className='grid grid-cols-12 w-full'
+                      key={item.title + item.artist}
+                    >
+                      <p className='col-span-4'>{item.title}</p>
+                      <p className='col-span-2'>{item.album}</p>
+                      <p>{item.track}</p>
+                      <p className='col-span-2'>{item.releaseDate}</p>
+                      <p>{item.length}</p>
+                      <p>{item.notes}</p>
 
-        {ARTIST.map((name: string) => (
+                      <Link href='#'>
+                        <a
+                          className='font-medium text-blue-600 dark:text-blue-500 hover:underline'
+                          onClick={() => handleOnEditSong(item)}
+                        >
+                          Edit
+                        </a>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </Card>
+            </Tabs.Item>
+          ))}
+        </Tabs.Group>
+        {/* show all */}
+        {/* {ARTIST.map((name: string) => (
           <Card key={name}>
             <div className='flex flex-wrap break-words flex-column'>
               <div className='flex items-center gap-4 mb-4 w-full'>
@@ -167,7 +202,7 @@ const ManagePage: NextPage = () => {
               ))}
             </div>
           </Card>
-        ))}
+        ))} */}
       </div>
       <SongModal
         type={modalStatusType}
