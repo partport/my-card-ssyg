@@ -50,38 +50,38 @@
   },
   {
     "artist": "BLACKPINK",
-    "name": "JISOO birthday",
+    "name": "JISOO Birthday",
     "startDate": "12-31",
     "endDate": "01-06",
-    "bonus": "3%"
+    "bonus": "2%"
   },
   {
     "artist": "BLACKPINK",
     "name": "ROSÉ Birthday",
     "startDate": "02-08",
     "endDate": "02-14",
-    "bonus": "3%"
+    "bonus": "2%"
   },
   {
     "artist": "BLACKPINK",
     "name": "JENNIE Birthday",
     "startDate": "01-13",
     "endDate": "01-19",
-    "bonus": "3%"
+    "bonus": "2%"
   },
   {
     "artist": "BLACKPINK",
     "name": "LISA Birthday",
     "startDate": "03-24",
     "endDate": "03-30",
-    "bonus": "3%"
+    "bonus": "2%"
   },
   {
     "artist": "JENNIE",
     "name": "JENNIE Birthday",
     "startDate": "01-13",
     "endDate": "01-19",
-    "bonus": "3%"
+    "bonus": "6%"
   },
   {
     "artist": "JENNIE",
@@ -95,7 +95,7 @@
     "name": "ROSÉ Birthday",
     "startDate": "02-08",
     "endDate": "02-14",
-    "bonus": "3%"
+    "bonus": "6%"
   },
   {
     "artist": "ROSÉ",
@@ -109,7 +109,7 @@
     "name": "LISA Birthday",
     "startDate": "03-24",
     "endDate": "03-30",
-    "bonus": "3%"
+    "bonus": "6%"
   },
   {
     "artist": "LISA",
@@ -151,6 +151,125 @@
     "name": "G-DRAGON Birthday",
     "startDate": "08-15",
     "endDate": "08-21",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "THE FIRST STEP : CHAPTER ONE",
+    "startDate": "08-04",
+    "endDate": "08-10",
     "bonus": "3%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "THE FIRST STEP : CHAPTER TWO",
+    "startDate": "09-15",
+    "endDate": "09-21",
+    "bonus": "3%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "THE FIRST STEP : CHAPTER THREE",
+    "startDate": "11-03",
+    "endDate": "11-09",
+    "bonus": "3%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "THE FIRST STEP : TREASURE EFFECT",
+    "startDate": "01-08",
+    "endDate": "01-14",
+    "bonus": "3%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "THE SECOND STEP : CHAPTER ONE",
+    "startDate": "02-12",
+    "endDate": "02-14",
+    "bonus": "3%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "HYUN SUK Birthday",
+    "startDate": "04-18",
+    "endDate": "04-24",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "JIHOON Birthday",
+    "startDate": "03-11",
+    "endDate": "03-17",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "YOSHI Birthday",
+    "startDate": "05-12",
+    "endDate": "05-18",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "JUNKYU Birthday",
+    "startDate": "09-06",
+    "endDate": "09-12",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "MASHIHO Birthday",
+    "startDate": "03-22",
+    "endDate": "03-28",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "JAE HYUK Birthday",
+    "startDate": "07-20",
+    "endDate": "07-26",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "ASAHI Birthday",
+    "startDate": "08-17",
+    "endDate": "08-23",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "YEDAM Birthday",
+    "startDate": "05-04",
+    "endDate": "05-10",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "DOYOUNG Birthday",
+    "startDate": "12-01",
+    "endDate": "12-07",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "HARUTO Birthday",
+    "startDate": "04-02",
+    "endDate": "04-08",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "JEONG WOO Birthday",
+    "startDate": "09-25",
+    "endDate": "10-01",
+    "bonus": "2%"
+  },
+  {
+    "artist": "TREASURE",
+    "name": "JUNG HWAN Birthday",
+    "startDate": "02-15",
+    "endDate": "02-18",
+    "bonus": "2%"
   }
 ]

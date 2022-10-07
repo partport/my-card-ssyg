@@ -22,6 +22,7 @@ const ListGrades: FC<Props> = (props) => {
         `md:w-[26.5rem]`,
         { ["w-[13.5rem]"]: grades.length === 3 },
         { ["w-[18rem]"]: grades.length === 4 },
+        { ["w-[22.5rem]"]: grades.length === 5 },
         { ["w-[26.5rem]"]: grades.length >= 6 }
       )}
     >

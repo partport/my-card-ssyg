@@ -11,6 +11,9 @@ import {
   getMonth,
   getYear,
   intervalToDuration,
+  isAfter,
+  isBefore,
+  isSameDay,
 } from 'date-fns';
 import axios from 'axios';
 import useSWR from 'swr';
@@ -43,11 +46,12 @@ const StatsPage: NextPage<Props> = (props) => {
   const bonus = data.filter((item: any) => {
     const startDate = new Date(`${item.startDate}-${thisYear}`);
     const endDate = new Date(`${item.endDate}-${thisYear}`);
-    return date >= startDate && date <= endDate;
+    return (
+      (isAfter(date, startDate) && isBefore(date, endDate)) ||
+      isSameDay(date, startDate) ||
+      isSameDay(date, endDate)
+    );
   });
-
-  // console.log(songs.filter(x => x.album === 'THE ALBUM'));
-
   return (
     <>
       <Head>
@@ -72,15 +76,17 @@ const StatsPage: NextPage<Props> = (props) => {
           );
         })}
       </div>
-      <div>
+      <div className='grid grid-cols-4'>
         {bonus.map((item: any) => {
           if (item.name.match('Birthday')) {
-            return <p key={item.name}>{item.name}</p>;
+            const artistSong = songs.filter((x) => x.artist === item.artist);
+            return artistSong.map((song) => {
+              return <p key={song.title}>{song.title} {item.bonus}</p>;
+            });
           } else {
             const bonusSong = songs.filter((x) => x.album === item.name);
-            console.log(bonusSong);
             return bonusSong.map((song) => {
-              return <p key={song.title}>{song.title}</p>;
+              return <p key={song.title}>{song.title} {item.bonus}</p>;
             });
           }
         })}
