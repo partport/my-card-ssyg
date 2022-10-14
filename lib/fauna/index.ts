@@ -90,7 +90,7 @@ export const createThemes = async (newTheme: FaunaCreateThemeType) => {
 
 export const updateThemeCard = async (
   id: string,
-  data: ThemeUpdateType
+  data: Pick<ThemeType, "order" | "name" | "cards">
 ) => {
   const ThemesInput = {
     id,

@@ -28,7 +28,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
       } = req;
       if (status === "UPDATE") {
         const { _id, order, name, cards } = data;
-
         const updateCard = await updateThemeCard(_id, {
           order,
           name,
