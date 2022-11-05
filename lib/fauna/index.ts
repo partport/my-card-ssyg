@@ -126,6 +126,7 @@ export const getAllGroups = async () => {
           _id
           name
           card_position
+          order
         }
       }
     }
@@ -140,6 +141,7 @@ export const getAllGroups = async () => {
       _id: item._id,
       name: item.name,
       cardPosition: item.card_position,
+      order: item.order
     };
   });
 };
