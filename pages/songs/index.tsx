@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import axios from 'axios';
 import useSWR, { mutate } from 'swr';
 import { Alert, Card, Tabs } from 'flowbite-react';
@@ -11,7 +11,7 @@ import {
   SONG_STATUS_MANAGE,
 } from '@/constants/songs';
 import { GroupType } from '@/constants/group';
-import { putEntry } from '@/lib/fauna';
+import { getAllGroups, putEntry } from '@/lib/fauna';
 import { listItemByArtist } from '@/lib/utils/fn';
 import SongModal from '@/components/modal/SongModal';
 import { useState } from 'react';
@@ -19,7 +19,7 @@ import Link from 'next/link';
 
 const fetcher = (url: any) => axios.get(url).then((res) => res.data);
 
-const ManagePage: NextPage = () => {
+const ManagePage: NextPage<{ groups: Array<GroupType> }> = (props) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [modalStatusType, setModalStatusType] = useState<SongStatusType>(
     SONG_STATUS_MANAGE.CREATE
@@ -67,7 +67,7 @@ const ManagePage: NextPage = () => {
 
   const SongByArtist = listItemByArtist(data);
   const ARTIST = Object.keys(SongByArtist);
-
+  console.log(props.groups);
   const handleOnClickAdd = async () => {
     setModalStatusType(SONG_STATUS_MANAGE.CREATE);
     setIsModalOpen(!isModalOpen);
@@ -137,40 +137,43 @@ const ManagePage: NextPage = () => {
           <ButtonAdd onClick={() => handleOnClickAdd()} />
         </div>
         <Tabs.Group aria-label='Tabs with underline' style='underline'>
-          {ARTIST.map((name: string) => (
-            <Tabs.Item title={name} key={name}>
-              <Card>
-                <div className='flex flex-wrap break-words flex-column'>
-                  <div className='flex items-center gap-4 mb-4 w-full'>
-                    <p className='font-bold'>{name}</p>
-                  </div>
-                  {SongByArtist[name].map((item: any) => (
-                    <div
-                      className='grid grid-cols-12 w-full'
-                      key={item.title + item.artist}
-                    >
-                      <p className='col-span-4'>{item.title}</p>
-                      <p className='col-span-2'>{item.album}</p>
-                      <p>{item.track}</p>
-                      <p className='col-span-2'>{item.releaseDate}</p>
-                      <p>{item.length}</p>
-                      <p>{item.notes}</p>
-
-                      <Link href='#'>
-                        <a
-                          className='font-medium text-blue-600 dark:text-blue-500 hover:underline'
-                          onClick={() => handleOnEditSong(item)}
-                        >
-                          Edit
-                        </a>
-                      </Link>
+          {props.groups
+            .sort((a: any, b: any) => a.order - b.order)
+            .map(({ name }) => (
+              <Tabs.Item title={name} key={name}>
+                <Card>
+                  <div className='flex flex-wrap break-words flex-column'>
+                    <div className='flex items-center gap-4 mb-4 w-full'>
+                      <p className='font-bold'>{name}</p>
                     </div>
-                  ))}
-                </div>
-              </Card>
-            </Tabs.Item>
-          ))}
+                    {SongByArtist[name].map((item: any) => (
+                      <div
+                        className='grid grid-cols-12 w-full'
+                        key={item.title + item.artist}
+                      >
+                        <p className='col-span-4'>{item.title}</p>
+                        <p className='col-span-2'>{item.album}</p>
+                        <p>{item.track}</p>
+                        <p className='col-span-2'>{item.releaseDate}</p>
+                        <p>{item.length}</p>
+                        <p>{item.notes}</p>
+
+                        <Link href='#'>
+                          <a
+                            className='font-medium text-blue-600 dark:text-blue-500 hover:underline'
+                            onClick={() => handleOnEditSong(item)}
+                          >
+                            Edit
+                          </a>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
+                </Card>
+              </Tabs.Item>
+            ))}
         </Tabs.Group>
+
         {/* show all */}
         {/* {ARTIST.map((name: string) => (
           <Card key={name}>
@@ -219,3 +222,14 @@ const ManagePage: NextPage = () => {
 };
 
 export default ManagePage;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await getAllGroups();
+
+  return {
+    props: {
+      groups: data,
+    },
+    revalidate: 10,
+  };
+};
